@@ -6,6 +6,8 @@ This is a Cloud and React based Social Network application. The backend is based
 The backend complete code can be seen in the [backend folder](https://github.com/oliver1112/Around/tree/main/around-backend).
 
 ### Structure
+I use Go to build a web service that has two main APIs: upload and search. The upload API allows users to submit a post which can include a message and a media file. The search API allows users to search other users' posts based on the user name or the keywords. I also created registration and login functions and used token-based authentication to protect my upload and search services.
+
 The structure of golang backend is as follows:
 
 <img src="https://github.com/oliver1112/Around/blob/main/assets/structure.png" alt="structure" width="1000"/>
@@ -14,12 +16,18 @@ The structure of golang backend is as follows:
 The HTTP Router recieves HTTP from client, and then handle all kinds of responses on handler layer. Next, the service layer process the function and perform database operations on database layer.
 
 
-### ElasticSearch
-Elasticsearch is an open-source, distributed, RESTful search engine. This is Elasticsearch [Official website](https://www.elastic.co/elasticsearch).
-I use Elasticsearch as Database in this project.
+### ElasticSearch and GCS
+[Elasticsearch](https://www.elastic.co/elasticsearch is an open-source, distributed, RESTful search engine.
+I use Elasticsearch as a NoSQL database to store data posted by users. In addition, I create an inverted index for the message of each post so that I can provide a quick keyword-based search for my users.
 
+
+[Google Cloud Storage](https://cloud.google.com/storage/docs/) is a Powerful, Simple and Cost-effective Object Storage Service. 
+
+I use GCS to store all media files posted by users because database is not good for storing a binary media files like images or videos. The corresponding link of each media file is stored as metadata in Elasticsearch.
 
 ### Authentication and Authorization
+I use JSON Web Token for server authentication.
+
 
 ## Frontend
 
