@@ -17,7 +17,7 @@ The HTTP Router recieves HTTP from client, and then handle all kinds of response
 
 
 ### ElasticSearch and GCS
-[Elasticsearch](https://www.elastic.co/elasticsearch is an open-source, distributed, RESTful search engine.
+[Elasticsearch](https://www.elastic.co/elasticsearch) is an open-source, distributed, RESTful search engine.
 I use Elasticsearch as a NoSQL database to store data posted by users. In addition, I create an inverted index for the message of each post so that I can provide a quick keyword-based search for my users.
 
 
@@ -26,7 +26,14 @@ I use Elasticsearch as a NoSQL database to store data posted by users. In additi
 I use GCS to store all media files posted by users because database is not good for storing a binary media files like images or videos. The corresponding link of each media file is stored as metadata in Elasticsearch.
 
 ### Authentication and Authorization
-I use JSON Web Token for server authentication.
+I implement Authentication and Authorization with JSON Web Token(JWT).
+
+The principle of token-based authentication:
+1. A user enters their login credentials (=username + password).
+2. The server verifies the credentials are correct and created an encrypted and signed token with a private key ( { username: “abcd”, exp: “2021/1/1/10:00” }, private key => token).
+3. Client-side stores the token returned from the server.
+4. On subsequent requests, the token is decoded with the same private key and if valid the request is processed.
+5. Once a user logs out, the token is destroyed client-side, no interaction with the server is necessary.
 
 
 ## Frontend
