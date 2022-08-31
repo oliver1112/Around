@@ -1,6 +1,17 @@
 # Around
 This is a Cloud and React based Social Network application. The backend is based on Golang and ElasticSearch. The frontend is based on ReactJS. 
 
+## Website Demo 
+The backend is depolyed to GCP. The frontend is running on AWS Amplify. You can visit this website: https://dev1490.d2dksnqh2qmmie.amplifyapp.com
+
+You can also watch this gif demo instead:
+
+![demo](https://github.com/oliver1112/Around/blob/main/assets/Around.gif)
+
+### Getting Started
+1. Signup and signin.
+2. Upload/Delete your image/video posts.
+3. Search posts you like with keywords.
 
 ## Backend
 The backend complete code can be seen in the [backend folder](https://github.com/oliver1112/Around/tree/main/around-backend).
