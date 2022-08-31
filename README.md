@@ -52,3 +52,7 @@ The principle of token-based authentication:
 The complete code of the frontend can be seen in the [frontend folder](https://github.com/oliver1112/Around/tree/main/frontend).
 ### Structure
 The React component tree is as follows:
+
+## Ideas for Future Work
+- Add user chatting function later.
+- Add Google map API to see nearby posts.
