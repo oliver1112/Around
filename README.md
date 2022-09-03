@@ -38,6 +38,7 @@ I use GCS to store all media files posted by users because database is not good 
 
 ### Authentication and Authorization
 I implement Authentication and Authorization with JSON Web Token(JWT).
+<img src="https://github.com/oliver1112/Around/blob/main/assets/jwt.png" alt="structure" width="600"/>
 
 The principle of token-based authentication:
 1. A user enters their login credentials (=username + password).
