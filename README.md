@@ -48,10 +48,16 @@ The principle of token-based authentication:
 
 
 ## Frontend
+Visit my website or watch the website demo for specific website frontend implementation.
+
 
 The complete code of the frontend can be seen in the [frontend folder](https://github.com/oliver1112/Around/tree/main/frontend).
-### Structure
+I use React and JavaScript in this project. Some components are imported from Ant Design for efficient design. 
+
 The React component tree is as follows:
+
+
+<img src="https://github.com/oliver1112/Around/blob/main/assets/componentTree.png" alt="structure" width="700"/>
 
 ## Ideas for Future Work
 - Add user chatting function later.
