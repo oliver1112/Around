@@ -2,9 +2,9 @@
 This is a Cloud and React based Social Network application. The backend is based on Golang and ElasticSearch. The frontend is based on ReactJS. 
 
 ## Website Demo 
-The backend is depolyed to GCP. The frontend is running on AWS Amplify. You can visit this website: https://dev1490.d2dksnqh2qmmie.amplifyapp.com
+The frontend and backend is depolyed to GCP. 
 
-You can also watch this gif demo instead:
+watch this gif:
 
 ![demo](https://github.com/oliver1112/Around/blob/main/assets/Around.gif)
 
