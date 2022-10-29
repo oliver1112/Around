@@ -1,4 +1,4 @@
-# Around
+# community
 This is a Cloud and React based Social Network application. The backend is based on Golang and ElasticSearch. The frontend is based on ReactJS. 
 
 ## Website Demo 
